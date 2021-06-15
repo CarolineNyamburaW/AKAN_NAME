@@ -34,3 +34,27 @@ function calculateDayIndex(inputArr) {
   return parseInt(index.toString().split(".")[0]);
 
 }
+
+function main() {
+  let daysOfTheWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+  let maleNames = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
+  let femaleNames = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
+  let userInputArr = getUserInput();
+  if (userInputArr[0] === 0){
+    alert ("Input was Invalid.Try Again");
+    return [ "", ""];
+   } else {
+    let index = calculateDayIndex (userInputArr);
+    let day = daysOfTheWeek[index];
+    let name = "";
+    let gender = prompt ("Enter Your Gender");
+    if (gender.toLowerCase().startsWith("m")) {
+      name = maleNames[index];
+    } else {
+      name = femaleNames[index];
+    }
+    alert("You were born on " + day + "\nYour Akan name is " + name);
+
+   }
+
+}
