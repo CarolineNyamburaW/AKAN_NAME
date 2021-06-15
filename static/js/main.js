@@ -23,3 +23,14 @@ function getUserInput() {
      }
   } return [0, 0, 0000]
 }
+
+
+function calculateDayIndex(inputArr) {
+  let day = inputArr [0]
+  let month = inputArr [1]
+  let year = inputArr [2]
+  let day = 20
+  let index = ( ( (century/4) -2*century-1) + ((5*year/4) ) + ((26*(month+1)/10)) + day ) % 7
+  return parseInt(index.toString().split(".")[0]);
+
+}
