@@ -49,3 +49,10 @@ margin-top: 10%;
   margin-top: 6%;
   font-size: 14px;
 }
+#footer .col-md-12 span {
+  color: yellow;
+  font-style: italic;
+  margin-top: 20%;
+  font-size: 20px;
+  margin-left: 0%;
+}
