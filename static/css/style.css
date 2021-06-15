@@ -1,3 +1,13 @@
 body{
   background-color:grey;
 }
+/*=============banner section==================== */
+#banner .row {
+  height: 300px;
+}
+#banner .col-md-12 {
+  background-color: yellow;
+}
+#banner .col-md-4 {
+  background-color: yellow;
+}
