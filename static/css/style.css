@@ -34,3 +34,11 @@ button {
   border: yellow;
   font-size:20px ;
  }
+
+ /*=============footer section==================== */
+
+#footer .row {
+  background-color: #000;
+height: 250px;
+margin-top: 10%;
+}
